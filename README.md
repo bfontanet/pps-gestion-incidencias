@@ -1,8 +1,15 @@
-# Gestión de Incidencias
+# Gestión de Incidencias - Proyecto de Puesta en Producción Segura
 
-Este es un proyecto de gestión de incidencias desarrollado en Node.js.
+Este proyecto sirve como base para una práctica del módulo de Puesta en Producción Segura (Ciberseguridad), donde los alumnos deben implementar aspectos de seguridad en una API de gestión de incidencias.
 
-## Instrucciones para clonar y ejecutar el proyecto en local
+## Aspectos de Seguridad a Implementar
+
+- **Validación de Datos de Entrada**: Asegurar que todos los datos ingresados por los usuarios son válidos y sanearlos para prevenir inyecciones SQL y ataques XSS.
+- **Protección contra SQL Injection**: Utilizar consultas preparadas o un ORM que evite la inyección de SQL al interactuar con la base de datos.
+- **Autenticación y Autorización**: Utilizar JWT para manejar la sesión de los usuarios, asegurando que solo los usuarios autenticados puedan acceder a las funcionalidades de la aplicación.
+- **Almacenamiento Seguro de Contraseñas**: Implementar hash de contraseñas utilizando técnicas de sal y pimienta para el registro y autenticación de usuarios.
+
+## Instrucciones para Clonar y Ejecutar el Proyecto en Local
 
 Antes de comenzar, asegúrate de tener instalado Node.js en tu equipo. Puedes descargarlo desde [nodejs.org](https://nodejs.org/).
 

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .error-container
+    h1 Error #{error.status}: #{message}
+    h2 Descripción del Error
+    if error.status === 404
+      p Parece que la página que estás buscando no existe.
+    else if error.status === 500
+      p Ha ocurrido un error interno en el servidor.
+    else
+      p Ha ocurrido un error desconocido.
+    pre.error-stack #{error.stack}
+
+    a(href='/') Volver a la página principal

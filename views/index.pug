@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  p Bienvenido a la plataforma #{title}
+  
+  h2 Rutas Disponibles
+  ul
+    li
+      a(href='/api/incidentes') Listar todos los incidentes
+    li
+      a(href='/api/incidentes/:id') Obtener detalles de un incidente específico (reemplazar :id con el ID del incidente)
+    li
+      a(href='/api/login') Iniciar sesión (usar método POST)
+    // Añadir más elementos de lista según las rutas que tengas disponibles
+
+  p Por favor, utiliza las herramientas adecuadas como Postman para las rutas que requieran métodos POST, DELETE, etc.

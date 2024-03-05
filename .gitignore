@@ -118,4 +118,4 @@ dist
 .pnp.*
 
 #VSCode workspace settings
-GestionIncidencias.code-workspace
+.code-workspace

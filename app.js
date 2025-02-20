@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // Aquí cambiamos la referencia al nuevo enrutador que hemos creado
-var incidentesRouter = require('./routes/incidentesAPI');
+var incidenciasRouter = require('./routes/incidenciasAPI');
 var indexRouter = require('./routes/index');
 
 var app = express();
@@ -22,11 +22,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
-// Inicialización de la lista de incidentes
-incidentesRouter.init();
+// Inicialización de la lista de incidencias
+incidenciasRouter.init();
 
-// Establecemos el prefijo '/api' para todas las rutas de la API de incidentes
-app.use('/api', incidentesRouter.router);
+// Establecemos el prefijo '/api' para todas las rutas de la API de incidencias
+app.use('/api', incidenciasRouter.router);
 
 // Manejo de error 404 - Recurso no encontrado
 app.use(function(req, res, next) {

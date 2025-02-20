@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Gestión de Incidentes' }); // 'title' es la variable que `index.pug` espera
+  res.render('index', { title: 'Gestión de Incidencias' }); // 'title' es la variable que `index.pug` espera
 });
 
 module.exports = router;

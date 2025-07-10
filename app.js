@@ -22,6 +22,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
+
+
 // Inicialización de la lista de incidencias
 incidenciasRouter.init();
 

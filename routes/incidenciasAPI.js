@@ -75,4 +75,4 @@ router.get('/incidencia/:idIncidencia/informe/:id', (req, res) => {
   // Implementación para obtener un informe específico de una incidencia...
 });
 
-module.exports = {router, init};
+module.exports = { router, init };

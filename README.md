@@ -33,4 +33,22 @@ Antes de comenzar, asegúrate de tener instalado Node.js en tu equipo. Puedes de
 
   http://localhost:3333
 
+## Tests Automáticos (Mocha + Chai)
+Este proyecto incluye una base mínima de tests automáticos usando Mocha y Chai.
+
+Para ejecutarlos en local:
+
+npm test
+
+Se testean:
+- Acceso correcto a /api/incidencias
+- Respuesta 404 para rutas inexistentes
+
+### Integración Continua (GitHub Actions)
+Cada vez que se hace un push o pull request al repositorio, los tests se ejecutan automáticamente mediante GitHub Actions.
+Esto permite asegurar que el código sigue funcionando antes de desplegar o entregar.
+
+📌 IMPORTANTE: No borres ni modifiques los tests sin entender qué están comprobando.
+
+
 ¡Listo! Ahora puedes explorar y probar la aplicación en tu entorno local.

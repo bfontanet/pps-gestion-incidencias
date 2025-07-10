@@ -1,3 +1,0 @@
-git add .github/workflows/deploy.yml
-git commit -m "CI/CD: test + deploy automático a Azure"
-git push origin main

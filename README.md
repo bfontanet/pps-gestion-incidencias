@@ -50,5 +50,4 @@ Esto permite asegurar que el código sigue funcionando antes de desplegar o entr
 
 📌 IMPORTANTE: No borres ni modifiques los tests sin entender qué están comprobando.
 
-
 ¡Listo! Ahora puedes explorar y probar la aplicación en tu entorno local.

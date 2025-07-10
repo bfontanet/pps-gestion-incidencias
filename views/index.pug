@@ -1,16 +1,37 @@
-extends layout
-
-block content
-  p Bienvenido a la plataforma #{title}
-  
-  h2 Rutas Disponibles
-  ul
-    li
-      a(href='/api/incidencias') Listar todos los incidencias
-    li
-      a(href='/api/incidencias/:id') Obtener detalles de una incidencia específica (reemplazar :id con el ID de la incidencia)
-    li
-      a(href='/api/login') Iniciar sesión (usar método POST)
-    // Añadir más elementos de lista según las rutas que tengas disponibles
-
-  p Por favor, utiliza las herramientas adecuadas como Postman para las rutas que requieran métodos POST, DELETE, etc.
+doctype html
+html
+  head
+    title Gestión de Incidencias
+    style.
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f3f3f3;
+        color: #333;
+        padding: 2em;
+      }
+      h1 {
+        color: #004a99;
+      }
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        margin-top: 1em;
+      }
+  body
+    h1 Gestión de Incidencias - Ciberseguridad
+    p Bienvenido a la plataforma Gestión de Incidencias
+    h2 Rutas Disponibles
+    ul
+      li
+        a(href="/api/incidencias") Listar todos los incidencias
+      li
+        a(href="/api/incidencia/:id") Obtener detalles de una incidencia específica (reemplazar :id con el ID de la incidencia)
+      li
+        a(href="/api/incidencias/login") Iniciar sesión (usar método POST)
+    p Por favor, utiliza las herramientas adecuadas como Postman para las rutas que requieran métodos POST, DELETE, etc.
+    p Derechos reservados © Bego 2024

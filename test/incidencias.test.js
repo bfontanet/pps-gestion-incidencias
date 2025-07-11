@@ -9,7 +9,7 @@ describe('API de incidencias (mínimo funcional)', () => {
 
   it('GET /api/incidencias debe devolver un array', (done) => {
     chai.request(server)
-      .get('/api/incidencia')
+      .get('/api/incidencias')
       .end((err, res) => {
         res.should.have.status(200);
         res.body.should.be.an('array');

@@ -7,7 +7,7 @@ chai.use(chaiHttp);
 
 describe('API de incidencias (mínimo funcional)', () => {
 
-  it('GET /api/incidencias debe devolver un array', (done) => {
+  it('GET /api/incidenciasA debe devolver un array', (done) => {
     chai.request(server)
       .get('/api/incidencias')
       .end((err, res) => {
